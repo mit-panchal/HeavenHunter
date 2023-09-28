@@ -1,4 +1,7 @@
 {
+  "homepage": "https://mit-panchal.github.io/heaven-hunter",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
   "name": "haven-hunter-app",
   "version": "0.1.0",
   "private": true,
