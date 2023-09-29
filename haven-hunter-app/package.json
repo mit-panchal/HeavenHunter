@@ -1,14 +1,22 @@
 {
-  "homepage": "https://mit-panchal.github.io/heaven-hunter",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
   "name": "haven-hunter-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
     "axios": "^1.5.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
     "cra-template": "1.2.0",
+    "crypto-browserify": "^3.12.0",
     "gh-pages": "^6.0.0",
+    "https-browserify": "^1.0.0",
+    "nodemailer": "^6.9.5",
+    "path-browserify": "^1.0.1",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",
@@ -17,6 +25,10 @@
     "react-hook-form": "^7.45.4",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.3",
+    "util": "^0.12.5",
     "web-vitals": "^3.4.0"
   },
   "scripts": {
@@ -47,6 +59,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@tailwindcss/forms": "^0.5.6",
     "autoprefixer": "^10.4.16",
+    "node-libs-browser": "^2.2.1",
     "postcss": "^8.4.30",
     "tailwindcss": "^3.3.3"
   }
