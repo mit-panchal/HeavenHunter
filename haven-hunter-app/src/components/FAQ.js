@@ -14,11 +14,11 @@ function FAQ() {
   const isTabOpen = (tab) => activeTab === tab;
 
   return (
-    <main id="FAQ" className="p-5 bg-light-blue">
+    <main id="FAQ" className="py-10 bg-light-blue">
       <div className="flex items-start justify-center my-2">
         <div className="w-full my-1 sm:w-10/12 md:w-1/2">
           <h2 className="mb-2 text-xl font-semibold text-vnet-blue">
-            FAQ - Order, Shipping, Etc.
+            FAQ - Search, Contact, Account Etc.
           </h2>
           <ul className="flex flex-col">
             <li className="my-2 bg-white shadow-lg">
@@ -26,7 +26,7 @@ function FAQ() {
                 onClick={() => handleTabClick(1)}
                 className="flex flex-row items-center justify-between p-3 font-semibold cursor-pointer"
               >
-                <span>When will my order arrive?</span>
+                <span>How do I create an account on HeavenHunter?</span>
                 <svg
                   className={`fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500 ${
                     isTabOpen(1) ? "rotate-180" : ""
@@ -42,9 +42,11 @@ function FAQ() {
                 }`}
               >
                 <p className="p-3 text-gray-900">
-                  Shipping time is set by our delivery partners, according to
-                  the delivery method chosen by you. Additional details can be
-                  found in the order confirmation.
+                  To create an account on HeavenHunter, simply click on the
+                  "Sign Up" button and follow the registration process. If you
+                  already have an account, you can log in by clicking "Log In"
+                  and entering your credentials. Your personalized account is
+                  your gateway to discovering your dream property.
                 </p>
               </div>
             </li>
@@ -53,7 +55,7 @@ function FAQ() {
                 onClick={() => handleTabClick(2)}
                 className="flex flex-row items-center justify-between p-3 font-semibold cursor-pointer"
               >
-                <span>When will my order arrive?</span>
+                <span>How can I search for properties in my desired city?</span>
                 <svg
                   className={`fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500 ${
                     isTabOpen(1) ? "rotate-180" : ""
@@ -69,9 +71,11 @@ function FAQ() {
                 }`}
               >
                 <p className="p-3 text-gray-900">
-                  Shipping time is set by our delivery partners, according to
-                  the delivery method chosen by you. Additional details can be
-                  found in the order confirmation.
+                  To search for properties in your desired city, use the search
+                  bar on our platform. Enter the name of the city, and our
+                  platform will provide listings in that location. HeavenHunter
+                  covers a wide range of cities, so you can choose the perfect
+                  setting for your future.
                 </p>
               </div>
             </li>
@@ -80,7 +84,9 @@ function FAQ() {
                 onClick={() => handleTabClick(3)}
                 className="flex flex-row items-center justify-between p-3 font-semibold cursor-pointer"
               >
-                <span>When will my order arrive?</span>
+                <span>
+                  Can I filter property listings based on my preferences?
+                </span>
                 <svg
                   className={`fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500 ${
                     isTabOpen(1) ? "rotate-180" : ""
@@ -96,9 +102,11 @@ function FAQ() {
                 }`}
               >
                 <p className="p-3 text-gray-900">
-                  Shipping time is set by our delivery partners, according to
-                  the delivery method chosen by you. Additional details can be
-                  found in the order confirmation.
+                  Yes, you can refine your property search by applying filters.
+                  Filter by property type, price range, amenities, and more.
+                  This ensures that you find listings that match your unique
+                  criteria, making it easier to discover the properties that
+                  pique your interest.
                 </p>
               </div>
             </li>

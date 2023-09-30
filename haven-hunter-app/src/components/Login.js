@@ -1,23 +1,22 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import FormBG from "../assets/FormBG.jpg";
 
 const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  async function submit(e) {
-    e.preventDefault();
-
+  async function loginUser(email, password) {
     try {
       const response = await axios.post("http://localhost:8000/login", {
         email,
         password,
       });
-
       if (response.data === "exist") {
-        navigate("/home", { state: { id: email } });
+        // Use the navigate function to redirect the user
+        navigate("/home");
       } else if (response.data === "notexist") {
         alert("User has not signed up");
       }
@@ -31,8 +30,20 @@ const Login = () => {
     navigate("/signup");
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    loginUser(email, password);
+  };
+
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
+    <div
+      className="relative flex items-center justify-center h-screen overflow-hidden bg-gray-100 bg-no-repeat bg-cover "
+      style={{
+        backgroundPosition: "50%",
+        backgroundImage: `url(${FormBG})`,
+      }}
+    >
       <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-md">
         <div className="flex justify-end">
           <button
@@ -56,7 +67,7 @@ const Login = () => {
           </button>
         </div>
         <h2 className="mb-4 text-2xl font-bold">Log In</h2>
-        <form onSubmit={submit}>
+        <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label
               htmlFor="email"
@@ -94,6 +105,7 @@ const Login = () => {
           <div className="mb-6 bg-blue-500">
             <button
               type="submit"
+              onClick={handleSubmit}
               className="w-full px-4 py-2 text-white transition duration-300 rounded-md hover:bg-black"
             >
               Log In

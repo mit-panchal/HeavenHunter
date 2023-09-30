@@ -1,9 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logoSvg from "../assets/logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="px-4 divide-y dark:bg-indigo-800 dark:text-gray-100">
+    <footer
+      id="Footer"
+      className="px-4 divide-y dark:bg-purple-600 dark:text-gray-100"
+    >
       <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
         <div className="lg:w-1/3">
           <a
@@ -23,22 +27,17 @@ export default function Footer() {
             <h3 className="uppercase tracki dark:text-gray-50">Product</h3>
             <ul className="space-y-1">
               <li>
-                <a rel="noopener noreferrer" href="\">
+                <a rel="noopener noreferrer" href="#Features">
                   Features
                 </a>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="\">
-                  Integrations
+                <a rel="noopener noreferrer" href="#WhyUs">
+                  Why Us
                 </a>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="\">
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a rel="noopener noreferrer" href="\">
+                <a rel="noopener noreferrer" href="#FAQ">
                   FAQ
                 </a>
               </li>
@@ -48,14 +47,11 @@ export default function Footer() {
             <h3 className="uppercase tracki dark:text-gray-50">Company</h3>
             <ul className="space-y-1">
               <li>
-                <a rel="noopener noreferrer" href="\">
-                  Privacy
-                </a>
+                <Link to="/privacy">Privacy</Link>
               </li>
+
               <li>
-                <a rel="noopener noreferrer" href="\">
-                  Terms of Service
-                </a>
+                <Link to="/terms-of-service">Terms of Service</Link>
               </li>
             </ul>
           </div>
@@ -63,17 +59,17 @@ export default function Footer() {
             <h3 className="uppercase dark:text-gray-50">Developers</h3>
             <ul className="space-y-1">
               <li>
-                <a rel="noopener noreferrer" href="\">
+                <a rel="noopener noreferrer" href="#Footer">
                   Public API
                 </a>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="\">
+                <a rel="noopener noreferrer" href="#Footer">
                   Documentation
                 </a>
               </li>
               <li>
-                <a rel="noopener noreferrer" href="\">
+                <a rel="noopener noreferrer" href="#Footer">
                   Guides
                 </a>
               </li>
@@ -84,7 +80,7 @@ export default function Footer() {
             <div className="flex justify-start space-x-3">
               <a
                 rel="noopener noreferrer"
-                href="\"
+                href="https://www.facebook.com/login/"
                 title="Facebook"
                 className="flex items-center p-1"
               >
@@ -99,7 +95,7 @@ export default function Footer() {
               </a>
               <a
                 rel="noopener noreferrer"
-                href="\"
+                href="https://twitter.com/"
                 title="Twitter"
                 className="flex items-center p-1"
               >
@@ -113,7 +109,7 @@ export default function Footer() {
               </a>
               <a
                 rel="noopener noreferrer"
-                href="\"
+                href="https://www.instagram.com/"
                 title="Instagram"
                 className="flex items-center p-1"
               >

@@ -7,12 +7,15 @@ const Contact = () => {
   // Handle form submission
   const sendEmail = (e) => {
     e.preventDefault();
-    // eslint-disable-next-line
+
     const name = form.current.name.value;
-    // eslint-disable-next-line
     const user_email = form.current.user_email.value;
-    // eslint-disable-next-line
     const message = form.current.message.value;
+
+    // Check if any of the fields are empty
+    if (!name || !user_email || !message) {
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -31,28 +34,10 @@ const Contact = () => {
       );
 
     e.target.reset();
-
-    emailjs
-      .sendForm(
-        "service_ba3fdzb",
-        "template_xccxeeu",
-        form.current,
-        "KodXa13EkmHBWXgIt"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-
-    e.target.reset();
   };
 
   return (
-    <section className="py-10 dark:bg-indigo-100 dark:text-white">
+    <section id="Contact" className="py-20 dark:bg-indigo-100 dark:text-white">
       <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
         <div className="py-6 text-gray-900 md:py-0 md:px-6">
           <h1 className="text-4xl font-bold">Get in touch</h1>
@@ -106,6 +91,7 @@ const Contact = () => {
         >
           <label className="block">
             <input
+              required
               type="text"
               placeholder="Full name"
               name="name"
@@ -130,7 +116,7 @@ const Contact = () => {
               className="block w-full px-2 py-2 rounded-md focus:ring focus:ring-indigo-600 dark:bg-gray-800"
             ></textarea>
           </label>{" "}
-          <button type="submit" className="self-center w-[25%]">
+          <button type="submit" className="self-center w-25">
             <div className="px-8 py-3 text-lg text-gray-900 bg-yellow-400 rounded focus:ring focus:ring-indigo-600">
               Submit
             </div>
