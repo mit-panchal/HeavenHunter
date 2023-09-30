@@ -2,7 +2,7 @@
   "name": "haven-hunter-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mit-panchal.github.io/HeavenHunter",
+  "homepage": "https://mit-panchal.github.io/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@headlessui/react": "^1.7.17",
