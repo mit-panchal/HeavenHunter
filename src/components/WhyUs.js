@@ -16,7 +16,7 @@ export default function WhyUs() {
             </p>
           </div>
           <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-            <div className="flex flex-col ">
+            <div className="flex flex-col pt-10">
               <dt className="text-xl font-semibold leading-6 text-indigo-800">
                 Number of Users
               </dt>
@@ -29,7 +29,7 @@ export default function WhyUs() {
                 {/* Set your final value (in thousands) and duration */}
               </dd>
             </div>
-            <div className="flex flex-col bg-white/5">
+            <div className="flex flex-col pt-10">
               <dt className="text-xl font-semibold leading-6 text-indigo-800">
                 Number of Properties
               </dt>
@@ -42,7 +42,7 @@ export default function WhyUs() {
                 {/* Set your final value (in thousands) and duration */}
               </dd>
             </div>
-            <div className="flex flex-col bg-white/5">
+            <div className="flex flex-col pt-10">
               <dt className="text-xl font-semibold leading-6 text-indigo-800">
                 Number of Dealers
               </dt>
@@ -55,7 +55,7 @@ export default function WhyUs() {
                 {/* Set your final value (in thousands) and duration */}
               </dd>
             </div>
-            <div className="flex flex-col bg-white/5">
+            <div className="flex flex-col pt-10">
               <dt className="text-sm font-semibold leading-6 text-indigo-800">
                 Total Deals
               </dt>

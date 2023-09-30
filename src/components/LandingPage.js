@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logoSvg from "../assets/logo.svg";
 import Contact from "./Contact";
 import Testimonials from "./Testimonials";
@@ -62,17 +63,30 @@ const LandingPage = () => {
               >
                 Features
               </a>
-
               <a
-                href="#contact-us"
+                href="#WhyUs"
+                className="px-3 py-5 text-white hover:text-gray-900"
+              >
+                Why Us
+              </a>
+              <a
+                href="#Testimonials"
+                className="px-3 py-5 text-white hover:text-gray-900"
+              >
+                Testimonials
+              </a>
+              <a
+                href="#Contact"
                 className="px-3 py-5 text-white hover:text-gray-900"
               >
                 Contact
               </a>
-
-              <button className="px-3 py-5 text-white hover:text-gray-900">
+              <a
+                href="#FAQ"
+                className="px-3 py-5 text-white hover:text-gray-900"
+              >
                 FAQ
-              </button>
+              </a>
             </div>
 
             <div className="flex items-center mr-5 md:hidden">
@@ -101,42 +115,42 @@ const LandingPage = () => {
             mobileMenuVisible ? "" : "hidden"
           }`}
         >
-          <div className="">
+          <div className="bg-gray-900">
             <a
               href="#HowItWorks"
-              className="block w-full px-4 py-2 text-sm text-left text-white hover:text-black"
+              className="block w-full px-4 py-2 text-sm text-left text-purple-100 hover:text-gray-500"
             >
               How It Works
             </a>
             <a
               href="#Features"
-              className="block w-full px-4 py-2 text-sm text-left text-white hover:text-black"
+              className="block w-full px-4 py-2 text-sm text-left text-purple-100 hover:text-gray-500"
             >
               Features
             </a>
             <a
               href="#WhyUs"
-              className="block w-full px-4 py-2 text-sm text-left text-white hover:text-black"
+              className="block w-full px-4 py-2 text-sm text-left text-purple-100 hover:text-gray-500"
             >
               Why Us
             </a>
 
             <a
               href="#Testimonials"
-              className="block w-full px-4 py-2 text-sm text-left text-white hover:text-black"
+              className="block w-full px-4 py-2 text-sm text-left text-purple-100 hover:text-gray-500"
             >
               Testimonials
             </a>
 
             <a
               href="#Contact"
-              className="block w-full px-4 py-2 text-sm text-left text-white hover:text-black"
+              className="block w-full px-4 py-2 text-sm text-left text-purple-100 hover:text-gray-500"
             >
               Contact
             </a>
             <a
               href="#FAQ"
-              className="block w-full px-4 py-2 text-sm text-left text-white hover:text-black"
+              className="block w-full px-4 py-2 text-sm text-left text-purple-100 hover:text-gray-500"
             >
               FAQ
             </a>
@@ -166,22 +180,27 @@ const LandingPage = () => {
                   <br />
                 </h1>
 
-                <button
-                  type="button"
-                  className="mx-2 rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
-                  data-te-ripple-init
-                  data-te-ripple-color="light"
-                >
-                  SignUp
-                </button>
-                <button
-                  type="button"
-                  className="mx-2 rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
-                  data-te-ripple-init
-                  data-te-ripple-color="light"
-                >
-                  Login
-                </button>
+                <Link to="/signup" className="text-white">
+                  <button
+                    type="button"
+                    className="mx-2 rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                  >
+                    {" "}
+                    Signup
+                  </button>
+                </Link>
+                <Link to="/login" className="text-white">
+                  <button
+                    type="button"
+                    className="mx-2 rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                  >
+                    Login
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
