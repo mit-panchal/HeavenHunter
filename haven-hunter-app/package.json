@@ -1,10 +1,8 @@
 {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
   "name": "haven-hunter-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mit-panchal.github.io/HeavenHunter/",
+  "homepage": "https://mit-panchal.github.io/HeavenHunter",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@headlessui/react": "^1.7.17",

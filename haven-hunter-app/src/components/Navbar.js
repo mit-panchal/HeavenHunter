@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="max-w-6xl mx-auto px-2">
           <div className="flex justify-between">
             <div className="flex items-center">
-              <Link to="/">
+              <Link to="/HeavenHunter">
                 <div>
                   <button className="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
                     <img
@@ -120,7 +120,7 @@ const Navbar = () => {
         </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Hero />} />
+        <Route path="/HeavenHunter" element={<Hero />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
       </Routes>

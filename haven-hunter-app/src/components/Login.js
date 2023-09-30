@@ -48,7 +48,7 @@ const Login = () => {
         <div className="flex justify-end">
           <button
             className="text-gray-600 hover:text-gray-800"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/HeavenHunter")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
