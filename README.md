@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <body>
 
   <h1>🏡 Haven Hunter 🏡</h1>
