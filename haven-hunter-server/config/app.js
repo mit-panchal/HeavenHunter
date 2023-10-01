@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // Route to handle GET request
-app.get("/HeavenHunter", cors(), (req, res) => {
+app.get("/", cors(), (req, res) => {
   // Add your logic here if needed
   res.send("Hello World!");
 });
