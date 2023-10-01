@@ -25,7 +25,7 @@ function Signup() {
         // Use the login function to set authentication status to true
 
         // Navigate to the home page
-        navigate("/home", { state: { id: email } });
+        navigate("/Heavenhunter/home", { state: { id: email } });
       }
     } catch (error) {
       console.log(error);
@@ -45,7 +45,7 @@ function Signup() {
         <div className="flex justify-end">
           <button
             className="text-gray-900 hover:text-gray-800"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/Heavenhunter")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +132,7 @@ function Signup() {
             Already have an account?{" "}
             <button
               className="text-blue-500 hover:underline focus:outline-none"
-              onClick={() => navigate("/login")}
+              onClick={() => navigate("/Heavenhunter/login")}
             >
               Log in
             </button>

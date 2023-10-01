@@ -20,13 +20,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // Route to handle GET request
-app.get("/", cors(), (req, res) => {
+app.get("/Heavenhunter", cors(), (req, res) => {
   // Add your logic here if needed
   res.send("Hello World!");
 });
 
 // Route to handle POST request for login
-app.post("/login", async (req, res) => {
+app.post("/Heavenhunter/login", async (req, res) => {
   const { email, password } = req.body;
 
   try {
@@ -44,7 +44,7 @@ app.post("/login", async (req, res) => {
 });
 
 // Route to handle POST request for signup
-app.post("/signup", async (req, res) => {
+app.post("/Heavenhunter/signup", async (req, res) => {
   const { email, password, fullName } = req.body;
 
   try {

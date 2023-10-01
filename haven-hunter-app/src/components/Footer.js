@@ -47,7 +47,7 @@ export default function Footer() {
             <h3 className="uppercase tracki dark:text-gray-50">Company</h3>
             <ul className="space-y-1">
               <li>
-                <Link to="/privacy">Privacy</Link>
+                <Link to="/Heavenhunter/privacy">Privacy</Link>
               </li>
 
               <li>

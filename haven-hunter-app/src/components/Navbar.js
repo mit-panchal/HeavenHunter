@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="max-w-6xl mx-auto px-2">
           <div className="flex justify-between">
             <div className="flex items-center">
-              <Link to="/">
+              <Link to="/Heavenhunter">
                 <div>
                   <button className="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
                     <img
@@ -63,11 +63,11 @@ const Navbar = () => {
               </button>
             </div>
             <div className="hidden md:flex items-center space-x-1">
-              <Link to="/login" className="py-5 px-3">
+              <Link to="/Heavenhunter/login" className="py-5 px-3">
                 Login
               </Link>
               <Link
-                to="/signup"
+                to="/Heavenhunter/signup"
                 className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300"
               >
                 Signup
@@ -111,18 +111,18 @@ const Navbar = () => {
               FAQ
             </button>
             <button className="block w-full text-left py-2 px-4 text-sm hover:bg-gray-200">
-              <Link to="/login">Login</Link>
+              <Link to="/Heavenhunter/login">Login</Link>
             </button>
             <button className="block w-full text-left py-2 px-4 text-sm hover:bg-gray-200">
-              <Link to="/signup">Signup</Link>
+              <Link to="/Heavenhunter/signup">Signup</Link>
             </button>
           </div>
         </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/Heavenhunter" element={<Hero />} />
+        <Route path="/Heavenhunter/signup" element={<Signup />} />
+        <Route path="/Heavenhunter/login" element={<Login />} />
       </Routes>
     </Router>
   );

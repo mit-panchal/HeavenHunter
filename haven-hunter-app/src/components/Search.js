@@ -57,7 +57,7 @@ const Search = () => {
         <nav className="fixed top-0 z-10 w-full bg-purple-600">
           <div className="flex mx-auto">
             <div className="flex items-center justify-start w-11/12 mx-auto sm:w-3/4 lg:w-2/3">
-              <a href="/home" className="text-blue-900 ">
+              <a href="/Heavenhunter/home" className="text-blue-900 ">
                 <div>
                   <button className="flex p-3 text-white bg-transparent i">
                     <img
