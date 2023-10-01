@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HeavenHunter/static/css/main.85c8e3d7.css",
+    "main.js": "/HeavenHunter/static/js/main.ef64fe3c.js",
+    "static/media/FormBG.jpg": "/HeavenHunter/static/media/FormBG.3fee0f924b1aab73205d.jpg",
+    "static/media/logo.svg": "/HeavenHunter/static/media/logo.09e6c93f263c84297d4d987fc22f54a2.svg",
+    "index.html": "/HeavenHunter/index.html",
+    "main.85c8e3d7.css.map": "/HeavenHunter/static/css/main.85c8e3d7.css.map",
+    "main.ef64fe3c.js.map": "/HeavenHunter/static/js/main.ef64fe3c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85c8e3d7.css",
+    "static/js/main.ef64fe3c.js"
+  ]
+}
