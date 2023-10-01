@@ -16,7 +16,7 @@ const Login = () => {
       });
       if (response.data === "exist") {
         // Use the navigate function to redirect the user
-        navigate("/Heavenhunter/home");
+        navigate("/HeavenHunter/home");
       } else if (response.data === "notexist") {
         alert("User has not signed up");
       }
@@ -27,7 +27,7 @@ const Login = () => {
   }
 
   const handleSignupClick = () => {
-    navigate("/Heavenhunter/signup");
+    navigate("/HeavenHunter/signup");
   };
 
   const handleSubmit = (e) => {
@@ -48,7 +48,7 @@ const Login = () => {
         <div className="flex justify-end">
           <button
             className="text-gray-600 hover:text-gray-800"
-            onClick={() => navigate("/Heavenhunter")}
+            onClick={() => navigate("/HeavenHunter")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

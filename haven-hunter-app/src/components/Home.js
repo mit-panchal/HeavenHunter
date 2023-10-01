@@ -23,7 +23,7 @@ export default function Home() {
     setMobileMenuVisible((prevVisible) => !prevVisible);
   };
   function logout() {
-    navigate("/Heavenhunter");
+    navigate("/HeavenHunter");
   }
   useEffect(() => {
     const handleResize = () => {

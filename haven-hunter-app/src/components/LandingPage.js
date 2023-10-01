@@ -180,7 +180,7 @@ const LandingPage = () => {
                   <br />
                 </h1>
 
-                <Link to="/Heavenhunter/signup" className="text-white">
+                <Link to="/HeavenHunter/signup" className="text-white">
                   <button
                     type="button"
                     className="mx-2 rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
@@ -191,7 +191,7 @@ const LandingPage = () => {
                     Signup
                   </button>
                 </Link>
-                <Link to="/Heavenhunter/login" className="text-white">
+                <Link to="/HeavenHunter/login" className="text-white">
                   <button
                     type="button"
                     className="mx-2 rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"

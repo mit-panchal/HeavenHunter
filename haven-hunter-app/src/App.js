@@ -14,14 +14,14 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/Heavenhunter" element={<LandingPage />} />
-        <Route path="/Heavenhunter/search" element={<Search />} />
-        <Route path="/Heavenhunter/home" element={<Home />} />
-        <Route path="/Heavenhunter/signup" element={<Signup />} />
-        <Route path="/Heavenhunter/login" element={<Login />} />
-        <Route path="/Heavenhunter/privacy" element={<PrivacyPolicy />} />
+        <Route path="/HeavenHunter" element={<LandingPage />} />
+        <Route path="/HeavenHunter/search" element={<Search />} />
+        <Route path="/HeavenHunter/home" element={<Home />} />
+        <Route path="/HeavenHunter/signup" element={<Signup />} />
+        <Route path="/HeavenHunter/login" element={<Login />} />
+        <Route path="/HeavenHunter/privacy" element={<PrivacyPolicy />} />
         <Route
-          path="/Heavenhunter/terms-of-service"
+          path="/HeavenHunter/terms-of-service"
           element={<TermsOfService />}
         />
         <Route path="*" element={<NotFound />} />
